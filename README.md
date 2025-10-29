@@ -4,7 +4,7 @@ A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoade
 
 ## Support
 
-DynTunes only works on Linux with D-Bus installed, using media players that implement the MPRIS specification.
+DynTunes (for now) only works on Linux with D-Bus installed, using media players that implement the MPRIS specification.
 This is most, if not all major media players on Linux.
 
 ## Installation
