@@ -25,7 +25,7 @@ public partial class DynTunes : ResoniteMod
 
         Engine.Current.OnReady += () =>
         {
-            Connector = new DummyMusicConnector();
+            Connector = new MPRISMusicConnector();
         };
     }
 }

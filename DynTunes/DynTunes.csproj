@@ -43,6 +43,10 @@
         </Reference>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Tmds.DBus.Protocol" Version="0.21.2" />
+    </ItemGroup>
+
     <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(CopyToMods)'=='true'">
         <Message Text="Attempting to copy $(TargetFileName) to $(GamePath)rml_mods" Importance="high" />
         <Copy SourceFiles="$(TargetDir)$(TargetFileName)" DestinationFolder="$(GamePath)rml_mods" ContinueOnError="true" />
