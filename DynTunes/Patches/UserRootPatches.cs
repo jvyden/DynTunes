@@ -48,8 +48,11 @@ public class UserRootPatches
 
         failed |= !WriteOrAttachDynVar(space, DynTunes.KeyPrefix + DynTunes.Title, state.Title);
         failed |= !WriteOrAttachDynVar(space, DynTunes.KeyPrefix + DynTunes.Artist, state.Artist);
+        failed |= !WriteOrAttachDynVar(space, DynTunes.KeyPrefix + DynTunes.Album, state.Album);
+        failed |= !WriteOrAttachDynVar(space, DynTunes.KeyPrefix + DynTunes.AlbumArtUrl, state.AlbumArtUrl);
         failed |= !WriteOrAttachDynVar(space, DynTunes.KeyPrefix + DynTunes.Playing, state.IsPlaying);
         failed |= !WriteOrAttachDynVar(space, DynTunes.KeyPrefix + DynTunes.Position, state.PositionSeconds);
+        failed |= !WriteOrAttachDynVar(space, DynTunes.KeyPrefix + DynTunes.Length, state.LengthSeconds);
 
         _ = failed; // Todo: warn
     }

@@ -39,4 +39,22 @@ public partial class DynTunes // Config
     [AutoRegisterConfigKey]
     private static readonly ModConfigurationKey<string> PositionInternal = new("Position", PositionDescription, () => PositionDefault);
     internal static string Position => Config?.GetValue(PositionInternal) ?? PositionDefault;
+    
+    private const string LengthDescription = "The name to use for the Length float";
+    private const string LengthDefault = "Length";
+    [AutoRegisterConfigKey]
+    private static readonly ModConfigurationKey<string> LengthInternal = new("Length", LengthDescription, () => LengthDefault);
+    internal static string Length => Config?.GetValue(LengthInternal) ?? LengthDefault;
+    
+    private const string AlbumDescription = "The name to use for the Album string";
+    private const string AlbumDefault = "Album";
+    [AutoRegisterConfigKey]
+    private static readonly ModConfigurationKey<string> AlbumInternal = new("Album", AlbumDescription, () => AlbumDefault);
+    internal static string Album => Config?.GetValue(AlbumInternal) ?? AlbumDefault;
+    
+    private const string AlbumArtUrlDescription = "The name to use for the Album art url string";
+    private const string AlbumArtUrlDefault = "AlbumArtUrl";
+    [AutoRegisterConfigKey]
+    private static readonly ModConfigurationKey<string> AlbumArtUrlInternal = new("AlbumArtUrl", AlbumArtUrlDescription, () => AlbumArtUrlDefault);
+    internal static string AlbumArtUrl => Config?.GetValue(AlbumArtUrlInternal) ?? AlbumArtUrlDefault;
 }
