@@ -5,7 +5,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Deterministic>true</Deterministic>
-        <PublishSingleFile>true</PublishSingleFile>
     </PropertyGroup>
     
     <PropertyGroup>
@@ -35,6 +34,10 @@
         </Reference>
         <Reference Include="FrooxEngine">
             <HintPath>$(GamePath)FrooxEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Elements.Core">
+            <HintPath>$(GamePath)Elements.Core.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="Renderite.Shared">
